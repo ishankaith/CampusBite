@@ -1,0 +1,181 @@
+
+/* =========================================
+   CAMPUSBITE — LOGIN & REGISTER PAGES
+========================================= */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  background:
+    radial-gradient(circle at 15% 15%, rgba(217, 243, 107, 0.18), transparent 32%),
+    linear-gradient(135deg, #f5f7ef, #edf2e9);
+}
+
+.auth-page .auth-card {
+  width: 100%;
+  max-width: 460px;
+  padding: 42px;
+  border: 1px solid rgba(24, 60, 48, 0.09);
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 22px 60px rgba(24, 60, 48, 0.12);
+}
+
+.auth-page .auth-eyebrow {
+  margin: 0 0 10px;
+  color: #66833b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.auth-page .auth-heading {
+  margin: 0;
+  color: #183c30;
+  font-size: clamp(28px, 5vw, 36px);
+  font-weight: 800;
+  letter-spacing: -1.2px;
+}
+
+
+.auth-page .auth-subtitle {
+  margin: 12px 0 30px;
+  color: #64756b !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400 !important;
+  line-height: 1.65;
+  letter-spacing: 0;
+  text-align: center;
+  text-shadow: none !important;
+  filter: none !important;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.auth-page .auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.auth-page .auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #29483b;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-page .auth-input,
+.auth-page .auth-select {
+  width: 100%;
+  min-height: 49px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  border: 1px solid #dce5dc;
+  border-radius: 12px;
+  outline: none;
+  background: #fbfcf9;
+  color: #183c30;
+  font: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.auth-page .auth-input:focus,
+.auth-page .auth-select:focus {
+  border-color: #789c42;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(217, 243, 107, 0.25);
+}
+
+.auth-page .auth-input::placeholder {
+  color: #a1aca4;
+}
+
+.auth-page .auth-error {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid #f0c7c7;
+  border-radius: 10px;
+  background: #fff3f3;
+  color: #b42318;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.auth-page .auth-notice {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f3f8e8;
+  color: #49642d;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.auth-page .auth-submit {
+  width: 100%;
+  min-height: 51px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 13px;
+  background: #183c30;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(24, 60, 48, 0.16);
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.auth-page .auth-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  background: #285541;
+  box-shadow: 0 12px 22px rgba(24, 60, 48, 0.2);
+}
+
+.auth-page .auth-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.auth-page .auth-footer {
+  margin: 25px 0 0;
+  color: #718078;
+  font-size: 13px;
+  text-align: center;
+}
+
+.auth-page .auth-footer a {
+  color: #315d40;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.auth-page .auth-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  .auth-page {
+    padding: 24px 15px;
+  }
+
+  .auth-page .auth-card {
+    padding: 30px 23px;
+    border-radius: 19px;
+  }
+}
+.auth-page .auth-subtitle,
+.auth-page .auth-subtitle * {
+  text-shadow: none !important;
+  filter: none !important;
+}
